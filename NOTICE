@@ -1,0 +1,20 @@
+CfxLua — Zed extension
+Copyright 2026 DemiAutomatic
+
+This product includes software derived from the Zed Lua extension
+(https://github.com/zed-extensions/lua), Copyright Zed Industries, Inc.,
+licensed under the Apache License, Version 2.0. The language-server adapter
+(src/lua.rs) and several Tree-sitter query files are based on that work and
+have been modified to target the "FiveM Lua" language and the cfxlua grammar.
+
+The cfxlua Tree-sitter grammar (https://github.com/DemiAutomatic/tree-sitter-cfxlua)
+is a fork of tree-sitter-grammars/tree-sitter-lua, licensed under the MIT License.
+
+The bundled LuaLS preprocessor plugin (lua/cfxlua-plugin.lua) ports the
+safe-navigation and manifest/meta handling from fivem-lls-addon
+(https://github.com/overextended/fivem-lls-addon), Copyright (c) 2022 Overextended,
+licensed under the MIT License, and adds tabinit / localin rewrites for CfxLua.
+
+At runtime this extension downloads (does not redistribute) fivem-lls-addon
+(https://github.com/overextended/fivem-lls-addon), licensed under the MIT License,
+and lua-language-server (https://github.com/LuaLS/lua-language-server).

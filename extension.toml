@@ -1,0 +1,19 @@
+id = "cfxlua"
+name = "CfxLua"
+description = "CitizenFX Lua (FiveM / RedM): cfx syntax highlighting (forked tree-sitter grammar) + bundled lua-language-server. Adds a 'CfxLua' language alongside the built-in Lua."
+version = "0.4.0"
+schema_version = 1
+authors = ["DemiAutomatic"]
+repository = "https://github.com/DemiAutomatic/zed-cfxlua"
+
+[language_servers.cfxlua-language-server]
+name = "LuaLS"
+languages = ["CfxLua", "EmmyLuadoc"]
+
+[grammars.cfxlua]
+repository = "https://github.com/DemiAutomatic/tree-sitter-cfxlua"
+rev = "6c3257dfd2e07ced1c59a7dd3fe5b3179bd677da"
+
+[grammars.emmyluadoc]
+repository = "https://github.com/EmmyLuaLs/tree-sitter-emmyluadoc"
+commit = "ea755c0fd34c07e16597bd62a404d6eba2a3891e"
